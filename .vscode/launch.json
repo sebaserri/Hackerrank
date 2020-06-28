@@ -4,6 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringReturnValue",
+            "request": "launch",
+            "mainClass": "LongestSubstringReturnValue",
+            "projectName": "hackerrank_293fee3"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - MoveZeroes",
@@ -28,8 +36,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "LeftRotation.js",
-            "program": "${workspaceFolder}/LeftRotation.js"
+            "name": "JS run",
+            "program": "${workspaceFolder}/LongestSubstringReturnValue.js"
         }
     ]
 }

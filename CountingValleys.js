@@ -5,10 +5,8 @@ const fs = require('fs');
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
-let inputString = '';
-let currentLine = 0;
-
-
+var inputString = '';
+var currentLine = 0;
 
 function readLine() {
     return inputString[currentLine++];
@@ -53,6 +51,7 @@ function main() {
     });
     
     process.stdin.on('end', _ => {
+        // @ts-ignore
         inputString = inputString.replace(/\s*$/, '')
             .split('\n')
             .map(str => str.replace(/\s*$/, ''));

@@ -1,12 +1,13 @@
 function rotLeft(a, r) {
     const n = a.length;
     const array = [];
+    const elementsOnTheRight = n - r;
     for (let i = 0; i < n; i++){
-      if (i < n - r) {
+      if (i < elementsOnTheRight) {
         array[i] = a[r + i];
       } else {
         //move the left r elements to the right side
-        array[i] = a[i - (n - r)]; 
+        array[i] = a[i - elementsOnTheRight]; 
       }
       //the index i should subtract n-r because the right n-r elements have been moved
     }
