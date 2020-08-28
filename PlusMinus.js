@@ -1,6 +1,5 @@
 'use strict';
 
-
 // Complete the plusMinus function below.
 function plusMinus(arr) {
     let positive = 0, negative = 0, zero = 0;
